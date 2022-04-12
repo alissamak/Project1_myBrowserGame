@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Sansita+Swashed:wght@300;400&display=swap');
+
+body{
+    background-color: aliceblue;
+    font-family: 'Sansita Swashed', cursive;
+}
+h1, h3{
+    text-align: center;
+}
+h3{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    font-weight: 500;
+}
+#puzzle-container{
+    margin: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 3px solid #666;
+    
+}
+#puzzle-image{
+    /* width: 800px;
+    height: 400px; */
+}
+#full-image{
+    width: 500px;
+}
+
+/* both image containers */
+.image-container{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+}
+img{
+    /* margin: 0px 40px; */
+}
+
+.btns-container{
+    text-align: center;
+    /* flex-wrap: wrap; */
+}
+.btn{
+    margin: 30px;
+}
+
+/* https://web.dev/drag-and-drop/ */
+/* box formatting */
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* gap: 10px; */
+  }
+.box {
+border: 3px solid #666;
+background-color: #ddd;
+/* border-radius: .5em;
+padding: 10px; */
+cursor: move;
+}
+.box.over {
+border: 3px dotted #666;
+}
