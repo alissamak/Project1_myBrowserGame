@@ -15,31 +15,52 @@
 
 <body>
     <h1>Sliding Lanscape Puzzle</h1>
-    <div class="container">
+    <!-- <div class="container">
         <div draggable="true" class="box">A</div>
         <div draggable="true" class="box">B</div>
         <div draggable="true" class="box">C</div>
+    </div> -->
+    <!-- <canvas id="practice">
+        <img id="piece1" src=""  draggable="true">
+    </canvas> -->
+    <div class="container" id="puzzle-container">
+        <div class="puzzle" id="piece1" draggable="true" value="1"><header>1</header></div>
+        <div class="puzzle" id="piece2" draggable="true" value="2"><header>2</header></div>
+        <div class="puzzle" id="piece3" draggable="true" value="3"><header>3</header></div>
+        <div class="puzzle" id="piece4" draggable="true" value="4"><header>4</header></div>
+        <div class="puzzle" id="piece5" draggable="true" value="5"><header>5</header></div>
+        <div class="puzzle" id="piece6" draggable="true" value="6"><header>6</header></div>
+        <div class="puzzle" id="piece7" draggable="true" value="7"><header>7</header></div>
+        <div class="puzzle" id="piece8" draggable="true" value="8"><header>8</header></div>
+        <div class="puzzle" id="piece9" draggable="true" value="9"><header>9</header></div>
+        <div class="puzzle" id="piece10" draggable="true" value="10"><header>10</header></div>
+        <div class="puzzle" id="piece11" draggable="true" value="11"><header>11</header></div>
+        <div class="puzzle" id="piece12" draggable="true" value="12"><header>12</header></div>
     </div>
-    <div id="puzzle-container" class="image-container">
-        <img id="puzzle-piece1"src="" width="100px" draggable="true">
-        <img id="puzzle-piece2"src="" width="100px" draggable="true">
-        <img id="puzzle-piece3"src="" width="100px" draggable="true">
-        <img id="puzzle-piece4"src="" width="100px" draggable="true">
-        <img id="puzzle-piece5"src="" width="100px" draggable="true">
-        <img id="puzzle-piece6"src="" width="100px" draggable="true">
-        <img id="puzzle-piece7"src="" width="100px" draggable="true">
-        <img id="puzzle-piece8"src="" width="100px" draggable="true">
-        <img id="puzzle-piece9"src="" width="100px" draggable="true">
-        <img id="puzzle-piece10"src="" width="100px" draggable="true">
-        <img id="puzzle-piece11"src="" width="100px" draggable="true">
-        <img id="puzzle-piece12"src="" width="100px" draggable="true">
-
-        <img id="puzzle-image" src="" width="100px">
-        <!-- <img onload="splitImage()" id="puzzle-image" src="assets/tropical_lake.jpg"> -->
+    
+    <!-- <div id="puzzle-container" class="container">
+        <img class="box" id="puzzle-piece1"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece2"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece3"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece4"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece5"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece6"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece7"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece8"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece9"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece10"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece11"src="" width="100px" draggable="true">
+        <img class="box" id="puzzle-piece12"src="" width="100px" draggable="true">
+    </div> -->
+    <div>
         <h3>Puzzle Image</h3>
     </div>
-    <div id="full-image-container" class="image-container">
-        <img id="full-image" src="assets/tropical_lake.jpg">
+    
+    <!-- <div class='canvas'></div> -->
+    <div id="full-image-container" class="container">
+        <img id="full-image" src="assets/tropical_lake2.jpg">
+    </div>
+    <div>
         <h3>Copy this Image</h3>
     </div>
     <div class="btns-container">
