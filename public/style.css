@@ -12,100 +12,60 @@ h3{
     flex-wrap: wrap;
     font-weight: 500;
 }
+
+/* puzzle images */
 #puzzle-container{
-    width: 810px;
-    border: 3px solid #666;
+    width: 800px;
+    height: 450px;
+    /* border: 3px solid #666; */
     margin: 0px;
 }
-/* #puzzle-image{
-    width: 800px;
-    height: 400px;
-} */
+.puzzle{
+    height: 112px;
+    border: 0.5px solid #666; ;
+}
+
+/* full model image */
 #full-image{
     width: 400px;
 }
 
 /* both image containers */
-/* .image-container{
+.image-container{
     float: left;
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-} */
+}
 #full-image-container{
     width: 400px;
     margin: 0px;
 }
 
+/* buttons */
 .btns-container{
     text-align: center;
     /* flex-wrap: wrap; */
 }
-/* .btn{
-    margin: 30px;
-} */
-
+/* win message */
+#winner-message{
+    background-color: pink;
+    text-align: center;
+}
 /* https://web.dev/drag-and-drop/ */
 /* box formatting */
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 0fr);
-    /* gap: 10px; */
-  }
+    grid-template-columns: repeat(3, 0fr);
+}
 .box {
-border: 3px solid #666;
-background-color: #ddd;
-border-radius: .5em;
-padding: 10px;
-cursor: move;
+    border: 3px solid #666;
+    background-color: #ddd;
+    border-radius: .5em;
+    padding: 10px;
+    cursor: move;
 }
 .box.over {
-border: 3px dotted #666;
+    border: 3px dotted #666;
 }
 
-/* .puzzle {
-    background-image:url(assets/tropical_lake2.jpg);
-    width:200px;
-    height:150px;
-    border: 1px solid #666;
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* display: grid;
- } */
  
- /* #piece1 {
-    background-position: 0px 0px
- }
- #piece2 {
-    background-position:-200px 0px
- }
- #piece3 {
-    background-position: -400px 0px
- }
- #piece4 {
-    background-position: -600px 0px
- }
- #piece5 {
-    background-position: 0px -150px
- }
- #piece6 {
-    background-position: -200px -150px
- }
- #piece7 {
-    background-position: -400px -150px
- }
- #piece8 {
-    background-position: -600px -150px
- }
- #piece9 {
-    background-position: 0px -300px
- }
- #piece10 {
-    background-position: -200px -300px
- }
- #piece11 {
-    background-position: -400px -300px
- }
- #piece12 {
-    background-position: -600px -300px
- } */

@@ -22,7 +22,7 @@ function displayImages(imageArray){
         let puzzleImg = document.createElement('img')
         puzzleImg.src = element.src
         puzzleImg.setAttribute('value', element.value)
-        console.log(puzzleImg.src)
+        // console.log(puzzleImg.src)
         puzzleContainer[index].innerHTML = ''
         puzzleContainer[index].append(puzzleImg)
     });
@@ -30,12 +30,12 @@ function displayImages(imageArray){
 displayImages(tropicalLakeImages);
 
 //randomize images function
-function mixer(){
+function mixImages(){
     const newMixArray = []
     const copy = tropicalLakeImages;
     console.log(copy)
     while(copy.length){
-        let randomIndex = Math.floor(Math.random()*copy.length-1)
+        let randomIndex = Math.floor(Math.random()*(copy.length-1))
         let randomSplicer = copy.splice(randomIndex, 1)
         console.log(randomSplicer[0])
         newMixArray.push(randomSplicer[0])
@@ -45,18 +45,24 @@ function mixer(){
     
 }
 
-document.getElementById('refresh-btn').addEventListener('click', mixer)
+document.getElementById('refresh-btn').addEventListener('click', mixImages)
 
 //correct image function
 // image element
 // parent element
 function solvedImage(imageElement, parentElement){
-    array.every((element, index) => {
-        return imageElement.value === parentElement.value
+    imageElement.every((element, index) => {
+        console.log(element)
+        return element.value === parentElement.value
     })
 }
+// solvedImage(tropicalLakeImages)
+// const winner = (imageElement, parentElement) => imageElement.value === parentElement.value
+// console.log(tropicalLakeImages.every(winner))
 
-
+let winnerMessage = document.createElement('div')
+winnerMessage.setAttribute('id', 'winner-message')
+winnerMessage.innerHTML = "Congrats you solved the puzzle!"
 
 //https://web.dev/drag-and-drop/
 //drag and drop functions
@@ -111,7 +117,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
     return false;
   }
-
+ 
 //correct image function
 
 // const isSolvable = (arr) => {
