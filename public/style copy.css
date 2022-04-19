@@ -62,18 +62,22 @@ cursor: move;
 .box.over {
 border: 3px dotted #666;
 }
+header{
+    color: red;
+    /* display: none; */
+}
 
-/* .puzzle {
+.puzzle {
     background-image:url(assets/tropical_lake2.jpg);
     width:200px;
     height:150px;
     border: 1px solid #666;
     /* display: flex;
     flex-wrap: wrap; */
-    /* display: grid;
- } */
+    /* display: grid; */
+ }
  
- /* #piece1 {
+ #piece1 {
     background-position: 0px 0px
  }
  #piece2 {
@@ -108,4 +112,4 @@ border: 3px dotted #666;
  }
  #piece12 {
     background-position: -600px -300px
- } */
+ }
