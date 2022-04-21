@@ -1,4 +1,5 @@
-//winnerArray
+//images sourced from Canva
+//winnerArray of split images
 const tropicalLakeImages = [
     {src: 'assets/tropical_lake2-split/00.jpg', title: 'Tropical Lake 1', value: '0'},
     {src: 'assets/tropical_lake2-split/10.jpg', title: 'Tropical Lake 2', value: '1'},
