@@ -8,5 +8,5 @@ Instructions:
 1. Use your cursor to drag and drop the image piece to the correct location. 
 2. Use the smaller image on the right side to compare and see how to complete the image.
 3. Click the refresh button to start over
-4. Click the next image button to complete a new puzzle.
+
 
