@@ -1,70 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Sansita+Swashed:wght@300;400&display=swap');
 
+/* headers and general body */
 body{
-    background-color: aliceblue;
+    background-color: #293A41;
     font-family: 'Sansita Swashed', cursive;
 }
-h1, h3{
+h1{
     text-align: center;
+    margin: 30px 0px;
+    color: #DAEEF7;
 }
 h3{
     display: flex;
     flex-wrap: wrap;
     font-weight: 500;
+    color: #DAEEF7;
+}
+
+/* both image containers */
+#main {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    width: auto;
+    height: 450;
+    margin-left: 60px;
 }
 
 /* puzzle images */
 #puzzle-container{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
     width: 800px;
-    height: 450px;
-    margin: 0px;
+    height: 448px;
+
 }
 .puzzle{
     height: 112px;
-    border: 0.5px solid #666; ;
+    /* border: 0.5px solid #666; */
 }
 
-/* full model image */
-#full-image{
-    width: 400px;
-}
-
-/* both image containers */
-.image-container{
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
-}
+/* full image */
 #full-image-container{
-    width: 400px;
-    margin: 0px;
+    display: grid;
+    grid-template-rows: repeat(3, 0fr);
+    margin-left: 50px;
+}
+#full-image{
+    width: 500px;
+}
+#copy-image-title{
+    height: 100px;
+}
+#full-image-container div h3{
+    margin-left: 40%;
 }
 
 /* buttons */
 .btns-container{
     text-align: center;
-    /* flex-wrap: wrap; */
+    height: 70px;
 }
+button{
+    background-color: #A7D6E9;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 40px;
+    width: 125px;
+    border: none;
+    /* border-style: groove; */
+    margin-left: 20px;
+}
+button:hover{
+    background-color: #DAEEF7;
+    color: #293A41;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
 /* win message */
-#winner-message{
-    background-color: pink;
-    text-align: center;
+#winner {
+    width: 40%;
+    height: 300px;
+    background: #F9E4FA;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Sansita Swashed', cursive;
 }
-/* https://web.dev/drag-and-drop/ */
-/* box formatting */
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 0fr);
+
+#winner #message {
+    color: #293A41;
+    margin: 0;
+    font-size: 4rem;
 }
-.box {
-    border: 3px solid #666;
-    background-color: #ddd;
-    border-radius: .5em;
+
+/* hiding win message with button */
+.hide {
+    display: none;
+}
+#winner #header {
+    text-align: right;
+    padding: 5px 10px;
+}
+#winner #header button {
     padding: 10px;
-    cursor: move;
-}
-.box.over {
-    border: 3px dotted #666;
+    border: 0px;
+    background: #456990;
+    color: #E4FDE1;
+    cursor: pointer;
+    width: 40px;
+    border-radius: 0px;
 }
 
  

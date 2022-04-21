@@ -6,44 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sliding Landscape Puzzle</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style copy.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap"
         rel="stylesheet">
     <script src="index.js" defer></script>
-    <!-- <script src="index copy.js" defer></script> -->
 </head>
 
 <body>
-    <h1>Sliding Lanscape Puzzle</h1>
-    <div class="container" id="puzzle-container">
-        <div class="puzzle" id="piece1" draggable="true" value="0"></div>
-        <div class="puzzle" id="piece2" draggable="true" value="1"></div>
-        <div class="puzzle" id="piece3" draggable="true" value="2"></div>
-        <div class="puzzle" id="piece4" draggable="true" value="3"></div>
-        <div class="puzzle" id="piece5" draggable="true" value="4"></div>
-        <div class="puzzle" id="piece6" draggable="true" value="5"></div>
-        <div class="puzzle" id="piece7" draggable="true" value="6"></div>
-        <div class="puzzle" id="piece8" draggable="true" value="7"></div>
-        <div class="puzzle" id="piece9" draggable="true" value="8"></div>
-        <div class="puzzle" id="piece10" draggable="true" value="9"></div>
-        <div class="puzzle" id="piece11" draggable="true" value="10"></div>
-        <div class="puzzle" id="piece12" draggable="true" value="11"></div>
+    <h1>Sliding Landscape Image Puzzle</h1>
+    <div id="winner" class="hide">
+        <div id="header"><button id="closeBtn" onclick="hideWinner()">x</button></div>
+        <h1 id="message"></h1>
     </div>
-    <div>
-        <h3>Puzzle Image</h3>
-    </div>
-    <div id="full-image-container" class="container">
-        <img id="full-image" src="assets/tropical_lake2.jpg">
-    </div>
-    <div>
-        <h3>Copy this Image</h3>
-    </div>
-    <div class="btns-container">
-        <button class="btn" id="refresh-btn" type="button" onclick="">Refresh Puzzle</button>
-        <button class="btn" id="submit-btn" type="button" onclick="">Submit Puzzle</button>
-        <!-- <button class="btn" id="next-btn" type="button" onclick="">Next Puzzle</button> -->
+
+    <div id="main">
+        <div class="container" id="puzzle-container">
+            <div class="puzzle" id="piece1" draggable="true" value="0"></div>
+            <div class="puzzle" id="piece2" draggable="true" value="1"></div>
+            <div class="puzzle" id="piece3" draggable="true" value="2"></div>
+            <div class="puzzle" id="piece4" draggable="true" value="3"></div>
+            <div class="puzzle" id="piece5" draggable="true" value="4"></div>
+            <div class="puzzle" id="piece6" draggable="true" value="5"></div>
+            <div class="puzzle" id="piece7" draggable="true" value="6"></div>
+            <div class="puzzle" id="piece8" draggable="true" value="7"></div>
+            <div class="puzzle" id="piece9" draggable="true" value="8"></div>
+            <div class="puzzle" id="piece10" draggable="true" value="9"></div>
+            <div class="puzzle" id="piece11" draggable="true" value="10"></div>
+            <div class="puzzle" id="piece12" draggable="true" value="11"></div>
+        </div>
+
+        <div class="container" id="full-image-container">
+            <img id="full-image" src="assets/tropical_lake2.jpg">
+            <div id="copy-image-title">
+                <h3>Copy this Image</h3>
+            </div>
+            <div class="btns-container">
+                <button class="btn" id="refresh-btn" type="button" onclick="">Refresh Puzzle</button>
+                <!-- <button class="btn" id="submit-btn" type="button" onclick="">Submit Puzzle</button> -->
+                <button class="btn" id="next-btn" type="button" onclick="">Next Puzzle</button>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
